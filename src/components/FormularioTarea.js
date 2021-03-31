@@ -23,8 +23,10 @@ const FormularioTarea = () => {
         setTarea ("");
   };
 
-  const borrarTarea = () => {
-    
+  const borrarTarea = (nombre) => {
+    console.log(nombre);
+    let arregloFiltrado = tareas.filter((elemento) => elemento !== nombre );
+    setTareas(arregloFiltrado);
   };
 
   return (
@@ -48,7 +50,7 @@ const FormularioTarea = () => {
         </form>
       </div>
       <section className="container w-75 my-5">
-      <ListaTareas listaTareas={tareas}></ListaTareas>
+      <ListaTareas listaTareas={tareas} borrarTarea={borrarTarea}></ListaTareas>
       </section>
       
     </Fragment>
