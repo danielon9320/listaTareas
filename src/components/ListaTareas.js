@@ -5,7 +5,7 @@ const ListaTareas = (props) => {
   return (
     <ul className="list-group">
       {props.listaTareas.map((tarea, indice) => (
-        <Item key={indice}></Item>
+        <Item key={indice} valor={tarea}></Item>
       ))}
     </ul>
   );

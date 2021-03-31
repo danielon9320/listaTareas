@@ -21,7 +21,11 @@ const FormularioTarea = () => {
         arreglo.push(tarea);
         setTareas(arreglo); //tareas = arreglo;
         setTarea ("");
-  }
+  };
+
+  const borrarTarea = () => {
+    
+  };
 
   return (
     <Fragment>
